@@ -4,13 +4,6 @@ const Schema = mongoose.Schema;
 require('mongoose-currency').loadType(mongoose);
 const Currency = mongoose.Types.Currency;
  
-// "name": "Weekend Grand Buffet",
-// "image": "images/buffet.png",
-// "label": "New",
-// "price": "19.99",
-// "description": "Featuring . . .",
-// "featured": false
-// }
 
 const promotionSchema = new Schema({
     name: {
@@ -44,5 +37,4 @@ const promotionSchema = new Schema({
 
 
 var Promotions = mongoose.model('Promotion', promotionSchema);
-
 module.exports = Promotions;

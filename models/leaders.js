@@ -1,14 +1,6 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-// {
-//     "name": "Peter Pan",
-//     "image": "images/alberto.png",
-//     "designation": "Chief Epicurious Officer",
-//     "abbr": "CEO",
-//     "description": "Our CEO, Peter, . . .",
-//     "featured": false
-// }
 
 const leaderSchema = new Schema({
     name: {
@@ -36,6 +28,7 @@ const leaderSchema = new Schema({
         default: false
     }
 });
+
 
 var Leaders = mongoose.model('Leader', leaderSchema);
 module.exports = Leaders;
